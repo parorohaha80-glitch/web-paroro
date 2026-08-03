@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🛒 Paroro</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="keranjang.html" class="active">Keranjang</a></li>
+    </ul>
+</nav>
+
+<section class="cart-container">
+
+    <h1>Keranjang Belanja</h1>
+
+    <table class="cart-table">
+
+        <thead>
+
+            <tr>
+                <th>No</th>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="cart-items">
+
+        </tbody>
+
+    </table>
+
+    <h2 id="total">Total : Rp0</h2>
+
+    <div class="cart-buttons">
+
+    <button id="clear-cart">
+        Kosongkan Keranjang
+    </button>
+
+    <button onclick="window.location='produk.html'">
+        Lanjut Belanja
+    </button>
+
+    <button id="checkout-btn">
+        🛍️ Beli Sekarang
+    </button>
+
+</div>
+
+</section>
+
+<script src="keranjang.js"></script>
+<script src="navbar.js"></script>
+
+</body>
+</html>
